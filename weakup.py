@@ -10,7 +10,10 @@ def counter(t):
     while t>0:
         mins , sec = divmod(t,60)
         timer = str(mins)+':'+str(sec)
-        print(timer, end='\r')
+        if sec<=9:
+            print(str(mins)," : ","0"+str(sec),end='\r')
+        else: 
+            print(str(mins)," : ",str(sec),end='\r')
         time.sleep(t)
         t=t-1
 
