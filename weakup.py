@@ -1,6 +1,6 @@
 import time
 import os
-t=int(input("please inter the time in second:"))
+t=int(input("please inter the time in minit:"))
 print(t)
 time.sleep(t)
 for i in range(3):
