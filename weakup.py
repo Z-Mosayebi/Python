@@ -14,7 +14,7 @@ def counter(t):
         time.sleep(t)
         t=t-1
 
-t=int(input("please inter the time in second:"))
+t=int(input("please inter the time in minit:"))
 counter(t)
 start_beeb(3)
 print("wakeup")
