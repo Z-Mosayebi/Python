@@ -4,7 +4,7 @@ import os
 def start_beeb(sec):
     for i in range(int(sec)):
       duration=(i+1)
-      freq=2500
+      freq=500
       os.system('play -nq -t alsa synth {} sine'.format(duration,freq))
 def counter(t):  
     while t>0:
